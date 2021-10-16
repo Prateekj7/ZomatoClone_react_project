@@ -1,0 +1,59 @@
+<React.StrictMode>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+
+import {BrowserRouter} from 'react-router-dom';
+
+import { Route } from "react-router-dom";
+
+"@types/react-router-dom": "^5.1.7"
+
+
+https://jsonplaceholder.typicode.com/todos/2
+
+<Route render={() => <YourComponent />} />
+
+<Route path={"/functionBased"}  render={() =><FCParent initNum={5} />} exact={true}></Route>
+
+--big basket json
+https://www.bigbasket.com/custompage/sysgenpd/?type=pc&slug=fruits-vegetables&sid=MEkdDI-ibWQBoWMBqHNrdV9saXN0kKJuZsOiY2OjNDg5qWJhdGNoX2lkeACiYW_ConVywqJhcMOibHTNAS6jZHNqzSJroW-qcG9wdWxhcml0eaVzcl9pZAGiZHPNBrijbXJpzQ4u
+
+--
+https://github.com/reduxjs/redux-devtools/tree/main/extension#13-use-redux-devtools-extension-package-from-npm
+
+
+--
+import { createStore } from 'redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
+
+const store = createStore(
+  reducer,
+  /* preloadedState, */ devToolsEnhancer()
+  // Specify name here, actionsDenylist, actionsCreators and other options if needed
+);
+
+
+--
+npm install --save redux-devtools-extension
+
+
+--
+"redux-devtools-extension": "^2.13.9",
+
+
+
+-----------------------------------------------
+
+-- Quantitative aptitude
+-- leetcode
+-- DSA and DAA
+----------------------------------------------
+
+
+
+
+
+
+
