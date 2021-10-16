@@ -22,7 +22,7 @@ export default function UsersReducersUI(){
         }
         if(usersReducer.loading === "not started")
             api();
-    }, []);
+    }, [dispatch, usersReducer.loading]);
 
     return(
         <>

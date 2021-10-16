@@ -1,10 +1,10 @@
+import { makeStyles, Typography } from "@material-ui/core";
 import firebase from "firebase";
-import Footer from "./Footer";
-import "firebase/auth"
-import { useHistory } from "react-router";
-import { makeStyles, Typography, useFormControl } from "@material-ui/core";
+import "firebase/auth";
 import { useContext } from "react";
-import {UserContext } from "./UserProvider"
+import { useHistory } from "react-router";
+import Footer from "./Footer";
+import { UserContext } from "./UserProvider";
 
 const useStyles = makeStyles({
     container: {

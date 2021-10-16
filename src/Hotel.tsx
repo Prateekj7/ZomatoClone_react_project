@@ -1,5 +1,5 @@
 import { IHotel } from "./HotelReducer";
-import { AppBar, Card, CardActionArea, CardContent, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Card, CardActionArea, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
     container: {

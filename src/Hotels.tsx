@@ -1,11 +1,11 @@
-import Hotel from "./Hotel";
+import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AppState } from "./AppState";
 import ErrorMessage from "./ErrorMessage";
+import Hotel from "./Hotel";
 import { IFileHotel, IHotel, IStatusizedHotel } from "./HotelReducer";
 import LoadingSpinner from "./LoadingSpinner";
-import { AppBar, Card, CardActionArea, CardContent, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
     container: {
@@ -33,7 +33,7 @@ export default function Hotels(){
         }
         dispatch({type: "loadingHotel", payload: []});
         api();
-    }, []);
+    }, [dispatch]);
     switch (hotelReducer.loading){
         case "completed":
             return renderGrid(hotelReducer.hotels, classes.container);

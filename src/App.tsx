@@ -19,7 +19,6 @@ import Home from "./Home";
 import StoreData from "./StoreData";
 import UsersReducersUI from "./UsersReducersUI";
 import CheckReducer from "./CheckReducer";
-import { Hotel } from "@material-ui/icons";
 import { useContext } from "react";
 import { UserContext } from "./UserProvider";
 
