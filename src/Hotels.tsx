@@ -21,10 +21,19 @@ export default function Hotels(){
     const hotelReducer: IStatusizedHotel = useSelector((state: AppState) => state?.hotelReducer);
     useEffect( () => {
         async function api(){
-            const response = await fetch("/hotel.json");
+            const response = await fetch("http://secure-shore-39416.herokuapp.com/graphql", {
+                body: '{"query":"{hotels{  id, name, cuisines, featured_image  }}"}',
+                method: "POST",
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json",
+                  Dnt: "1"
+                },
+              });
+        
             if(response.ok){
                 const json = await response.json();
-                const hotels: IHotel[] = json.map((x:IFileHotel) => x.restaurant);
+                const hotels: IHotel[] = json.data.hotels.map((x:IFileHotel) => x);
                 dispatch({ type: "completedHotel", payload: hotels });
             }
             else {
