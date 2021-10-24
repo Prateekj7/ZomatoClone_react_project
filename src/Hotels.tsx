@@ -21,7 +21,7 @@ export default function Hotels(){
     const hotelReducer: IStatusizedHotel = useSelector((state: AppState) => state?.hotelReducer);
     useEffect( () => {
         async function api(){
-            const response = await fetch("http://secure-shore-39416.herokuapp.com/graphql", {
+            const response = await fetch("https://secure-shore-39416.herokuapp.com/graphql", {
                 body: '{"query":"{hotels{  id, name, cuisines, featured_image  }}"}',
                 method: "POST",
                 headers: {
