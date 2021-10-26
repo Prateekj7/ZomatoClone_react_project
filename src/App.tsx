@@ -21,6 +21,8 @@ import UsersReducersUI from "./UsersReducersUI";
 import CheckReducer from "./CheckReducer";
 import { useContext } from "react";
 import { UserContext } from "./UserProvider";
+import JestTestingUI from "./JestTestingUI";
+import JestBackend from "./JestBackend";
 
 export default function App() {
   const userContext = useContext(UserContext);
@@ -69,7 +71,9 @@ export default function App() {
       <Route path={'/Home'} component={Home} exact={true}></Route>
       <Route path={'/'} render={() => <Redirect to="/Home" />} exact={true}></Route>
 
-
+      {/* react testing */}
+      <Route path={'/JestTestingUI'} component={JestTestingUI} exact={true}></Route>
+      <Route path={'/JestBackend'} component={JestBackend} exact={true}></Route>
     </Switch>
   );
 }

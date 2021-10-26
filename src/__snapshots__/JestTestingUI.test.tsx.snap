@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JestTestingUI Snapshot testing 1`] = `
+<body>
+  <div>
+    <input
+      data-testid="input"
+      type="text"
+      value=""
+    />
+    <label
+      data-testid="output"
+    >
+      Hello 
+    </label>
+  </div>
+</body>
+`;

@@ -6,6 +6,13 @@ import { useHistory } from "react-router";
 import Footer from "./Footer";
 import { UserContext } from "./UserProvider";
 
+// export const useUser = () => {
+//     return({
+//         displayName: useContext
+//     })
+// }
+
+
 const useStyles = makeStyles({
     container: {
         display: "flex",

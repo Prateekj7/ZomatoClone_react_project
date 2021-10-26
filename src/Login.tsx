@@ -67,6 +67,7 @@ export default function Login(){
                     error = {errors.emailAddress?.message !== undefined}
                     helperText = {errors.emailAddress?.message}
                     className={classes.textField}
+                    data-testid= "emailAddress"
                 />
             </div>
             <div className={classes.textFieldContainer}>
@@ -84,6 +85,7 @@ export default function Login(){
                     error = {errors.password?.message !== undefined}
                     helperText = {errors.password?.message}
                     className={classes.textField}
+                    data-testid= "password"
                 />
             </div>
         

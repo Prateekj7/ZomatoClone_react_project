@@ -32,6 +32,8 @@ export default function Footer(props: IFooterProps){
                 color="primary"
                 type="submit"
                 className = {classes.button}
+                data-testid = "primary"
+                id = "primary"
                 >
                     {props.primary.text}
                 </Fab>
@@ -40,12 +42,17 @@ export default function Footer(props: IFooterProps){
                 size="small" 
                 color="secondary"
                 className = {classes.button}
+                data-testid = "secondary"
+                id = "secondary"
                 >
                     {props.secondary.text}
                 </Fab>
                 <Fab onClick={props.tertiary.onClick} 
                 variant="extended" 
-                size="small">
+                size="small"
+                id = "tertiary"
+                data-testid = "tertiary"
+                >
                     {props.tertiary.text}
                 </Fab>
             </div>

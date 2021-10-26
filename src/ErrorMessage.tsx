@@ -15,7 +15,7 @@ export default function ErrorMessage(props: IProps){
     const classes = useStyles();
     return (
         <div>
-            <Typography variant="h5" className={classes.container}>
+            <Typography variant="h5" className={classes.container} id="errorMessage">
                 {props.message}
             </Typography>
         </div>
