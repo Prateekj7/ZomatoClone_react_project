@@ -37,9 +37,9 @@ export default function TopBar(){
                         </div>
                         <InputBase placeholder="Search..." className={classes.searchBox} />
                     </div>
-                    {!isUserExist && <Button color="inherit" onClick={() => history.push("/Login")}>Login</Button>}
-                    {!isUserExist && <Button color="inherit" onClick={() => history.push("/SignUp")}>SignUp</Button>}
-                    {isUserExist && <Button color="inherit" onClick={() => history.push("/Profile")}>Profile</Button>}
+                    {!isUserExist && <Button color="inherit" onClick={() => history.push("/Login")} id="Login">Login</Button>}
+                    {!isUserExist && <Button color="inherit" onClick={() => history.push("/SignUp")} id="SignUp">SignUp</Button>}
+                    {isUserExist && <Button color="inherit" onClick={() => history.push("/Profile")} id="Profile">Profile</Button>}
                 </Toolbar>
             </AppBar>
         </Box>

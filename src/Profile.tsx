@@ -35,9 +35,9 @@ export default function Profile(){
     return (
         <div className={styles.container}>
             <Typography variant="h3">Welcome to your Profile!!!</Typography>
-            <Typography variant="h5">{userContext?.displayName}</Typography>
-            <Typography variant="h5">{userContext?.email}</Typography>
-            <Typography variant="h5">{userContext?.uid}</Typography>
+            <Typography variant="h5" id="displayName">{userContext?.displayName}</Typography>
+            <Typography variant="h5" id="email">{userContext?.email}</Typography>
+            <Typography variant="h5" id="uid">{userContext?.uid}</Typography>
             <Footer 
                 primary={{
                     text: "Sign out",
