@@ -5,8 +5,9 @@ describe("login page", () => {
             method: "POST",
             pathname: '**/identitytoolkit/v3/relyingparty/verifyPassword'
         }).as('verifyPassword');
-        cy.visit("https://geeksforgeeks-90cf4.web.app/Login");
-        cy.get('#emailAddress').type("type@gmail.com");
+        cy.visit("https://geeksforgeeks-90cf4.web.app/");
+        cy.get('#Login').click();
+        cy.get('#emailAddress').type("type@gmail12344.com");
         cy.get('#password').type("password");
         cy.get('#primary').click();
         cy.wait('@verifyPassword');
@@ -17,14 +18,15 @@ describe("login page", () => {
             method: "POST",
             pathname: '**/identitytoolkit/v3/relyingparty/verifyPassword'
         }).as('verifyPassword');
-        cy.visit("https://geeksforgeeks-90cf4.web.app/Login");
+        cy.visit("https://geeksforgeeks-90cf4.web.app/");
+        cy.get('#Login').click();
         cy.get('#emailAddress').type("cricket@gmail.com");
         cy.get('#password').type("cricket");
         cy.get('#primary').click();
         cy.wait('@verifyPassword');
         cy.url().should('include', 'Home');
-        
-        cy.get('#email').type("cricket@gmail.com");
+        cy.get('#Profile').click();
+        cy.get('#email').contains('cricket@gmail.com');
         //Go to profile
         //check if same email id exists. 
     })
