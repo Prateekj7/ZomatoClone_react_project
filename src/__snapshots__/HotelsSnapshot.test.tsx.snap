@@ -58,12 +58,15 @@ exports[`Hotels Sanpshot test Profile Page without mock 1`] = `
       </h3>
       <h5
         class="MuiTypography-root MuiTypography-h5"
+        id="displayName"
       />
       <h5
         class="MuiTypography-root MuiTypography-h5"
+        id="email"
       />
       <h5
         class="MuiTypography-root MuiTypography-h5"
+        id="uid"
       />
       <div
         class="makeStyles-container-4"
